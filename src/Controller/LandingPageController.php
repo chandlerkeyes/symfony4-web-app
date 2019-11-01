@@ -4,9 +4,13 @@
 
     use Symfony\Component\HttpFoundation\Response;
     use Symfony\Component\Routing\Annotation\Route;
+    use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-    class LandingPageController {
+    class LandingPageController extends AbstractController {
         public function showLandingPage() {
-            return new Response('<html><body><h1>Welcome</h1></body></html>');
+            $name = "Chandler";
+            return $this->render('landing-page/landing_page.html.twig', [
+                'name' => $name
+            ]);
         }
     }
