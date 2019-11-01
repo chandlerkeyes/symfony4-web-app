@@ -9,12 +9,4 @@
         public function showLandingPage() {
             return new Response('<html><body><h1>Welcome</h1></body></html>');
         }
-
-        /**
-         * @Route("/description")
-         */
-
-        public function showLandingPageWithDescription() {
-            return new Response('<html><body><h1>Welcome</h1></body></html>');
-        }
     }
