@@ -7,6 +7,9 @@
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
     class LandingPageController extends AbstractController {
+        /**
+         * @Route("/", name="landing")
+         */
         public function showLandingPage() {
             $name = "Chandler";
             return $this->render('landing-page/landing_page.html.twig', [
