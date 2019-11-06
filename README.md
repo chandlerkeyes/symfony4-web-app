@@ -3,6 +3,6 @@ Symfony4 web app that will take in user information on the landing page, store t
 
 
 Prereq: 
-Download Symfony4 and Composer
+Symfony4 and Composer must be installed on your PC/MAC
 
 Run `symfony server:start`
