@@ -5,15 +5,13 @@
     use Symfony\Component\HttpFoundation\Response;
     use Symfony\Component\Routing\Annotation\Route;
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+    use App\Controller\UserController;
 
     class LandingPageController extends AbstractController {
         /**
          * @Route("/", name="landing")
          */
         public function showLandingPage() {
-            $name = "Chandler";
-            return $this->render('landing-page/landing_page.html.twig', [
-                'name' => $name
-            ]);
+            return $this->forward('app.user_controller:index');
         }
     }
